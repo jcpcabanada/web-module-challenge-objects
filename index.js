@@ -28,7 +28,7 @@ Test your createMenuItems function by doing the following:
   
   For example: createMenuItem("pizza",5,"lunch") would return this as the object: {name:"Pizza",price:5,category:"lunch"}
 */
-console.log(createMenuItem("pizza","5","lunch"))
+console.log('Task:1b:', createMenuItem("pizza","5","lunch"))
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
@@ -60,7 +60,7 @@ const burger = {
     return burger.price;
   }
 }
-console.log(burger.discount('teacher'))
+console.log('Task 2:',burger.discount('teacher'))
 
 
 
@@ -80,6 +80,7 @@ const reviews = [
 Using the reviews array above:
   1. log only Julius' feedback to the console - no function needed 
 */
+console.log('Task 3:', reviews[5].feedback);
 
 
 
@@ -90,7 +91,7 @@ Reyna's feedback is missing! Use what you know to do the following: (no function
   2. log the reviews array to the console to check your work
 */
 reviews[7].feedback = 'this place is chill with really cool people, great for getting work done on weekdays';
-console.log(reviews);
+
 
 
 
@@ -104,9 +105,11 @@ Write a function that creates an object with name, rating, feedback, add the new
   4. should return the resulting array
 */
 
-function addReview(/*Your Code Here */){
-  /*Your Code Here */
+function addReview(array, name, rating, feedback){
+    array.push({name, rating, feedback});
+    return array;
 }
+console.log('Task 5:', addReview(reviews, 'Daniela', 5, 'Beautiful atmosphere and wonderful vegan options!'))
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Write a function to return a review based on the index of the review in the array.
@@ -119,8 +122,9 @@ Use the getReviewByIndex function below to do the following:
 */
 
 
-function getReviewByIndex(/*Your code here*/) {
+function getReviewByIndex(array, [i], ) {
   /*Your code here*/
+  return `${name} gave the restaurant a ${rating} star review, and their feedback was: ${feedback}`
 }
 
 
